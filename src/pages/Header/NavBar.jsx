@@ -11,7 +11,7 @@ const NavBar = () => {
 
     return (
         <div className='flex justify-between items-center absolute top-2 left-0 right-0 max-w-[1240px] mx-auto text-white mt-3'>
-            <img className='' src={logo} alt="" />
+            <Link to='/'><img className='' src={logo} alt="" /></Link>
             <div className='relative max-w-[370px] w-full h-[40px] border border-white rounded'>
                 <BiSearch className='absolute top-[12px] left-2' />
                 <input className='bg-[#ffffff65] px-12   border-0 placeholder:text-white h-full w-full outline-none' type="text" placeholder='Search your Destination...' />
