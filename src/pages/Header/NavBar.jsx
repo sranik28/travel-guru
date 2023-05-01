@@ -26,7 +26,7 @@ const NavBar = () => {
                     <NavLink to="/blog">Blog</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                 </ul>
-                <Link to="/login"><button className='bg-[#F9A51A] px-5 rounded py-2'>Login</button></Link>
+                <NavLink to="/login"><button className='bg-[#F9A51A] px-5 rounded py-2'>Login</button></NavLink>
             </div>
         </div>
     );
