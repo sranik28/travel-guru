@@ -19,13 +19,15 @@ const NavBar = () => {
             <span className='md:hidden'>
                 {toggle ? <AiOutlineCloseCircle onClick={() => setToggle(!toggle)} /> : <FiMenu onClick={() => setToggle(!toggle)} />}
             </span>
-            <ul className=' flex gap-[50px] items-center'>
-                <NavLink to="/news">News</NavLink>
-                <NavLink to="/destination">Destination</NavLink>
-                <NavLink to="/blog">Blog</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+            <div className='flex gap-[50px]'>
+                <ul className=' flex gap-[50px] items-center'>
+                    <NavLink to="/news">News</NavLink>
+                    <NavLink to="/destination">Destination</NavLink>
+                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
+                </ul>
                 <Link to="/login"><button className='bg-[#F9A51A] px-5 rounded py-2'>Login</button></Link>
-            </ul>
+            </div>
         </div>
     );
 };

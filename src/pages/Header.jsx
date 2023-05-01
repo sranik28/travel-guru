@@ -10,7 +10,9 @@ const Header = () => {
                 <img className='h-screen w-full ' src={banner} alt="" />
             </div>
             <NavBar />
-            <Banner />
+            <section className='max-w-[1240px] mx-auto'> 
+                <Banner />
+            </section>
         </main>
     );
 };
